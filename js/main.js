@@ -1,4 +1,4 @@
-const div = document.querySelector("body div");
+const div = document.querySelector("#poke");
 const input = document.querySelector("#pokeid");
 
 function showPokemon(id) {
