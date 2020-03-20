@@ -1,11 +1,74 @@
+@charset "UTF-8";
 body {
   font-family: "Conv_Pokemon_GB";
   background: url("../assets/img/bg.png");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .container {
+  margin-left: 25%;
+  margin-top: 5%;
+  background: red;
+  width: 800px;
+  height: 600px;
+  border-radius: 30px;
+  border: 1px solid black;
+  -webkit-box-shadow: inset 0px 0px 40px black;
+          box-shadow: inset 0px 0px 40px black;
+  padding: 1rem;
+}
+
+.container .bolas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.container .bola {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 5px double #424242;
+}
+
+.container svg {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+}
+
+.container svg line {
+  color: white;
+}
+
+.container .bolaPequeña {
+  height: 20px;
+  width: 20px;
+}
+
+.container .bolaAzul {
+  background: radial-gradient(at bottom right, #0064c8 25%, white);
+}
+
+.container .bolaRoja {
+  background: radial-gradient(at bottom right, #ff3434 25%, white);
+}
+
+.container .bolaAmarilla {
+  background: radial-gradient(at bottom right, #fbff07 5%, white);
+}
+
+.container .bolaVerde {
+  background: radial-gradient(at bottom right, #51ff00 25%, white);
+}
+
+.container .div-left {
+  position: relative;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,11 +76,45 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 5%;
+  left: 2%;
+  height: 435px;
+  width: 350px;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.container .div-left #display {
+  background: #9c9715;
+  top: 5%;
+  left: 10%;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.container .div-left img {
+  position: absolute;
+  top: 10%;
+  left: 17%;
+  width: 250px;
+  height: 250px;
+}
+
+.container .div-left input {
+  color: black;
+  font-size: 10px;
+  padding: 10px;
+  margin: 10px;
+  margin: 12px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

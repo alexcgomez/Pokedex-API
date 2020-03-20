@@ -1,30 +1,121 @@
 $primary-color: rgb(214, 16, 16);
+$color-bola-azul: radial-gradient(
+  at bottom right,
+  rgba(0, 100, 200, 1) 25%,
+  white
+);
+$color-bola-verde: radial-gradient(at bottom right, rgb(81, 255, 0) 25%, white);
+$color-bola-amarilla: radial-gradient(
+  at bottom right,
+  rgb(251, 255, 7) 5%,
+  white
+);
+$color-bola-roja: radial-gradient(at bottom right, rgb(255, 52, 52) 25%, white);
 
 body {
   font-family: "Conv_Pokemon_GB";
   //   color: $primary-color;
   background: url("../assets/img/bg.png");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  margin-left: 25%;
+  margin-top: 5%;
+  background: red;
+  width: 800px;
+  height: 600px;
+  border-radius: 30px;
+  border: 1px solid black;
+  box-shadow: inset 0px 0px 40px black;
+  padding: 1rem;
 
-.container {
-  h1 {
+  .bolas {
+    display: flex;
+    padding: 5px;
   }
 
-  div {
+  .bola {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 5px double rgb(66, 66, 66);
+    // box-shadow: inset 10px 5px 0px rgb(199, 196, 226);
   }
 
-  label {
+  svg {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    line {
+      color: white;
+    }
   }
+  .bolaPequeña {
+    height: 20px;
+    width: 20px;
+    // display: inline-block;
+  }
+  .bolaAzul {
+    background: $color-bola-azul;
+  }
+  .bolaRoja {
+    background: $color-bola-roja;
+  }
+  .bolaAmarilla {
+    background: $color-bola-amarilla;
+  }
+  .bolaVerde {
+    background: $color-bola-verde;
+  }
+  .div-left {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    left: 2%;
+    height: 435px;
+    // background: blue;
+    width: 350px;
+    padding: 10px;
+    font-size: 10px;
 
-  input {
+    #display {
+      // position: absolute;
+      background: #9c9715;
+      // background: transparent;
+      top: 5%;
+      left: 10%;
+      width: 250px;
+      height: 250px;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+    img {
+      position: absolute;
+      top: 10%;
+      left: 17%;
+      width: 250px;
+      height: 250px;
+      // z-index: 1;
+    }
+
+    input {
+      // background: blue;
+      color: black;
+      // position: absolute;
+      font-size: 10px;
+      padding: 10px;
+      margin: 10px;
+      margin: 12px;
+      border-radius: 10px;
+    }
   }
 }

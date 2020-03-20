@@ -10,23 +10,37 @@
 </head>
 
 <body>
+  <h1>API Request</h1>
+
   <div class="container">
-    <h1>API Request</h1>
-    <div id="poke"></div>
-    <label for="pokeid">Introduce ID</label>
-    <input type="number" name="pokeid" id="pokeid" />
+    <svg>
+      <line x1="5" y1="120" x2="220" y2="120" stroke="black" stroke-width="3"></line>
+      <line x1="220" y1="120" x2="270" y2="10" stroke="black" stroke-width="3"></line>
+      <line x1="270" y1="10" x2="795" y2="10" stroke="black" stroke-width="3"></line>
+      <line x1="795" y1="10" x2="795" y2="595" stroke="black" stroke-width="3"></line>
+      <line x1="795" y1="595" x2="5" y2="595" stroke="black" stroke-width="3"></line>
+      <line x1="5" y1="595" x2="5" y2="120" stroke="black" stroke-width="3"></line>
+      <line x1="400" y1="10" x2="400" y2="595" stroke="black" stroke-width="3"></line>
+      <line x1="405" y1="10" x2="405" y2="595" stroke="black" stroke-width="3"></line>
+
+    </svg>
+    <div class="bolas">
+      <div class="bolaAzul bola"></div>
+      <div class="bolaAmarilla bola bolaPequeña"></div>
+      <div class="bolaRoja bola bolaPequeña"></div>
+      <div class="bolaVerde bola bolaPequeña"></div>
+    </div>
+    <div class="div-left">
+      <div id="display"></div>
+      <div id="poke"></div>
+      <div id="text-left">
+
+        <label for="pokeid">Introduce ID</label><br>
+        <input type="number" name="pokeid" id="pokeid" />
+        <p>Rango de ID: 0 - 890</p>
+      </div>
+    </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
   <script src="js/main.js"></script>

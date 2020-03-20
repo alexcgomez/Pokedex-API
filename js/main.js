@@ -13,7 +13,8 @@ function showPokemon(id) {
   const pokemon = data => {
     let pokediv = document.createElement("div");
     div.innerHTML = `
-  <img src="${data.sprites.front_default}" >
+  <div class="div-img">
+    <img src="${data.sprites.front_default}" >
   <div class="info">
     <span class="name">${data.name}</span>
     <span class="id">${data.id}</span>
