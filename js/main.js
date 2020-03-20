@@ -1,5 +1,6 @@
 const div = document.querySelector("#poke");
 const input = document.querySelector("#pokeid");
+const rightdiv = document.querySelector(".div-right");
 
 function showPokemon(id) {
   const pokemonList = data => {
@@ -11,7 +12,6 @@ function showPokemon(id) {
   };
 
   const pokemon = data => {
-    let pokediv = document.createElement("div");
     div.innerHTML = `
   <div class="div-img">
     <img src="${data.sprites.front_default}" >
@@ -20,6 +20,20 @@ function showPokemon(id) {
     <span class="id">${data.id}</span>
   </div>
 `;
+    rightdiv.innerHTML = `
+    <label for="name">Nombre</label><br>
+    <p id="name">${data.name}</p>
+    <label for="xp">Experiencia Base</label><br>
+    <p id="xp">${data.base_experience}</p>
+    <label for="height">Altura</label><br>
+    <p id="height">${data.height}</p>
+    <label for="weight">Peso</label><br>
+    <p id="weight">${data.weight} kg</p>
+    <label for="shiny">Shiny</label><br><br><br>
+    <img id="shiny" src="${data.sprites.front_shiny}">
+  
+  
+  `;
   };
 
   fetch("https://pokeapi.co/api/v2/pokemon?limit=1000")

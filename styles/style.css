@@ -67,6 +67,7 @@ body {
 }
 
 .container .div-left {
+  color: white;
   position: relative;
   text-align: center;
   display: -webkit-box;
@@ -110,11 +111,25 @@ body {
 }
 
 .container .div-left input {
+  background: blue;
   color: black;
+  background: #9c9715;
+  text-align: center;
+  font-family: "Conv_Pokemon_GB";
   font-size: 10px;
   padding: 10px;
   margin: 10px;
   margin: 12px;
   border-radius: 10px;
+}
+
+.container .div-right {
+  color: white;
+  position: relative;
+  padding: 1rem;
+  width: 370px;
+  left: 52%;
+  height: 570px;
+  bottom: 90%;
 }
 /*# sourceMappingURL=style.css.map */

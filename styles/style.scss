@@ -11,9 +11,10 @@ $color-bola-amarilla: radial-gradient(
   white
 );
 $color-bola-roja: radial-gradient(at bottom right, rgb(255, 52, 52) 25%, white);
+$poke-font: "Conv_Pokemon_GB";
 
 body {
-  font-family: "Conv_Pokemon_GB";
+  font-family: $poke-font;
   //   color: $primary-color;
   background: url("../assets/img/bg.png");
   background-size: cover;
@@ -72,6 +73,8 @@ body {
     background: $color-bola-verde;
   }
   .div-left {
+    color: white;
+
     position: relative;
     text-align: center;
     display: flex;
@@ -108,14 +111,27 @@ body {
     }
 
     input {
-      // background: blue;
+      background: blue;
       color: black;
+      background: #9c9715;
+      text-align: center;
       // position: absolute;
+      font-family: "Conv_Pokemon_GB";
       font-size: 10px;
       padding: 10px;
       margin: 10px;
       margin: 12px;
       border-radius: 10px;
     }
+  }
+  .div-right {
+    // background: blue;
+    color: white;
+    position: relative;
+    padding: 1rem;
+    width: 370px;
+    left: 52%;
+    height: 570px;
+    bottom: 90%;
   }
 }
